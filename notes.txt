@@ -1,0 +1,19 @@
+This App is Running on host (agent-2) - 3.90.82.168
+
+💲 ssh ubuntu@3.90.82.168
+💲 cd ~/apps/monitor$
+
+
+Node exporter is instaled on:
+
+(JenkinsController) - 52.207.130.141
+(agent-1) - 34.229.67.28
+(prod-1) - 3.91.102.202
+(prod-2) - 18.205.189.253
+
+
+(JenkinsController) ssh ubuntu@52.207.130.141
+(prod-1) ssh ubuntu@3.91.102.202
+(prod-2) ssh ubuntu@18.205.189.253
+
+https://ourcodeworld.com/articles/read/1686/how-to-install-prometheus-node-exporter-on-ubuntu-2004

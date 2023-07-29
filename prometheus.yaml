@@ -6,8 +6,20 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ['a4ab40be4352648c5bccf11c406f501f-1579908073.us-west-2.elb.amazonaws.com']
-  - job_name: 'ajent-1-worker'
+  - job_name: 'agent-1-worker'
     scrape_interval: 5s
     static_configs:
       - targets: ['34.229.67.28:9100']
+  - job_name: 'JenkinsController'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['52.207.130.141:9100']
+  - job_name: 'Staging 1'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['3.91.102.202:9100']
+  - job_name: 'Staging 2'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['18.205.189.253:9100']
 
