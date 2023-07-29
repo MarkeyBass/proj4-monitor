@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'todos-eks-prod'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['a4ab40be4352648c5bccf11c406f501f-1579908073.us-west-2.elb.amazonaws.com']
+  - job_name: 'ajent-1-worker'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['34.229.67.28:9100']
+
